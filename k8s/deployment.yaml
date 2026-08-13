@@ -16,14 +16,30 @@ spec:
         - name: eks-python-api
           image: eks-python-api:1.0
           imagePullPolicy: IfNotPresent
+          env:
+           - name: ENVIRONMENT
+             valueFrom:
+               configMapKeyRef:
+                 name: eks-python-api-config
+                 key:  ENVIRONMENT 
           ports:
             - containerPort: 8000
+
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "128Mi"
+            limits:
+              cpu: "500m"
+              memory: "256Mi"
+
           readinessProbe:
             httpGet:
               path: /health
               port: 8000
             initialDelaySeconds: 5
             periodSeconds: 10
+
           livenessProbe:
             httpGet:
               path: /health
