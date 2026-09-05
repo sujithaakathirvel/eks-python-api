@@ -1,0 +1,5 @@
+NAME                              READY   STATUS    RESTARTS   AGE    IP           NODE                                      NOMINATED NODE   READINESS GATES
+eks-python-api-6859ff4476-7ck2l   1/1     Running   0          114s   10.0.1.213   ip-10-0-1-79.eu-west-2.compute.internal   <none>           <none>
+eks-python-api-6859ff4476-7jpk5   1/1     Running   0          11m    10.0.0.43    ip-10-0-0-28.eu-west-2.compute.internal   <none>           <none>
+eks-python-api-6859ff4476-l2lgc   1/1     Running   0          11m    10.0.1.88    ip-10-0-1-79.eu-west-2.compute.internal   <none>           <none>
+eks-python-api-6859ff4476-wjjs4   1/1     Running   0          114s   10.0.0.25    ip-10-0-0-28.eu-west-2.compute.internal   <none>           <none>

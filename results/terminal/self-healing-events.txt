@@ -1,0 +1,30 @@
+19m         Normal   Created                  pod/eks-python-api-6859ff4476-l2lgc                  Container created
+19m         Normal   Pulled                   pod/eks-python-api-6859ff4476-l2lgc                  Successfully pulled image "175036779958.dkr.ecr.eu-west-2.amazonaws.com/eks-python-api:1.0" in 3.457s (3.457s including waiting). Image size: 64271808 bytes.
+19m         Normal   Pulled                   pod/eks-python-api-6859ff4476-7jpk5                  Successfully pulled image "175036779958.dkr.ecr.eu-west-2.amazonaws.com/eks-python-api:1.0" in 3.338s (3.338s including waiting). Image size: 64271808 bytes.
+19m         Normal   Created                  pod/eks-python-api-6859ff4476-7jpk5                  Container created
+19m         Normal   Started                  pod/eks-python-api-6859ff4476-7jpk5                  Container started
+19m         Normal   Started                  pod/eks-python-api-6859ff4476-l2lgc                  Container started
+19m         Normal   SuccessfullyReconciled   ingress/eks-python-api                               Successfully reconciled
+10m         Normal   ScalingReplicaSet        deployment/eks-python-api                            Scaled up replica set eks-python-api-6859ff4476 from 2 to 4
+10m         Normal   Created                  pod/eks-python-api-6859ff4476-7ck2l                  Container created
+10m         Normal   Started                  pod/eks-python-api-6859ff4476-7ck2l                  Container started
+10m         Normal   SuccessfulCreate         replicaset/eks-python-api-6859ff4476                 Created pod: eks-python-api-6859ff4476-7ck2l
+10m         Normal   Scheduled                pod/eks-python-api-6859ff4476-wjjs4                  Successfully assigned default/eks-python-api-6859ff4476-wjjs4 to ip-10-0-0-28.eu-west-2.compute.internal
+10m         Normal   Pulled                   pod/eks-python-api-6859ff4476-wjjs4                  Container image "175036779958.dkr.ecr.eu-west-2.amazonaws.com/eks-python-api:1.0" already present on machine and can be accessed by the pod
+10m         Normal   Created                  pod/eks-python-api-6859ff4476-wjjs4                  Container created
+10m         Normal   Started                  pod/eks-python-api-6859ff4476-wjjs4                  Container started
+10m         Normal   SuccessfulCreate         replicaset/eks-python-api-6859ff4476                 Created pod: eks-python-api-6859ff4476-wjjs4
+10m         Normal   Pulled                   pod/eks-python-api-6859ff4476-7ck2l                  Container image "175036779958.dkr.ecr.eu-west-2.amazonaws.com/eks-python-api:1.0" already present on machine and can be accessed by the pod
+10m         Normal   Scheduled                pod/eks-python-api-6859ff4476-7ck2l                  Successfully assigned default/eks-python-api-6859ff4476-7ck2l to ip-10-0-1-79.eu-west-2.compute.internal
+6m4s        Normal   Killing                  pod/eks-python-api-6859ff4476-wjjs4                  Stopping container eks-python-api
+6m4s        Normal   Killing                  pod/eks-python-api-6859ff4476-7ck2l                  Stopping container eks-python-api
+6m4s        Normal   SuccessfulDelete         replicaset/eks-python-api-6859ff4476                 Deleted pod: eks-python-api-6859ff4476-wjjs4
+6m4s        Normal   SuccessfulDelete         replicaset/eks-python-api-6859ff4476                 Deleted pod: eks-python-api-6859ff4476-7ck2l
+6m4s        Normal   ScalingReplicaSet        deployment/eks-python-api                            Scaled down replica set eks-python-api-6859ff4476 from 4 to 2
+5m8s        Normal   SuccessfulCreate         replicaset/eks-python-api-6859ff4476                 Created pod: eks-python-api-6859ff4476-6jlp5
+5m8s        Normal   Scheduled                pod/eks-python-api-6859ff4476-6jlp5                  Successfully assigned default/eks-python-api-6859ff4476-6jlp5 to ip-10-0-0-28.eu-west-2.compute.internal
+5m8s        Normal   Killing                  pod/eks-python-api-6859ff4476-7jpk5                  Stopping container eks-python-api
+5m7s        Normal   Started                  pod/eks-python-api-6859ff4476-6jlp5                  Container started
+5m7s        Normal   Created                  pod/eks-python-api-6859ff4476-6jlp5                  Container created
+5m7s        Normal   Pulled                   pod/eks-python-api-6859ff4476-6jlp5                  Container image "175036779958.dkr.ecr.eu-west-2.amazonaws.com/eks-python-api:1.0" already present on machine and can be accessed by the pod
+4m56s       Normal   SuccessfullyReconciled   targetgroupbinding/k8s-default-ekspytho-af6fd58abf   Successfully reconciled

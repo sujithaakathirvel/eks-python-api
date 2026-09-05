@@ -14,14 +14,14 @@ spec:
     spec:
       containers:
         - name: eks-python-api
-          image: eks-python-api:1.0
+          image: 175036779958.dkr.ecr.eu-west-2.amazonaws.com/eks-python-api:1.0
           imagePullPolicy: IfNotPresent
           env:
            - name: ENVIRONMENT
              valueFrom:
                configMapKeyRef:
                  name: eks-python-api-config
-                 key:  ENVIRONMENT 
+                 key: ENVIRONMENT
           ports:
             - containerPort: 8000
 

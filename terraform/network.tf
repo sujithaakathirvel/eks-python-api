@@ -19,6 +19,8 @@ resource "aws_subnet" "eks" {
   cidr_block        = "10.0.${count.index}.0/24"
   availability_zone = data.aws_availability_zones.available.names[count.index]
 
+  map_public_ip_on_launch = true
+
   tags = {
     Name = "${var.cluster_name}-subnet-${count.index + 1}"
   }
